@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Localizer
+
+  Created by Nicolas Degen on 24.06.18.
+  Copyright © 2018 Nicolas Degen. All rights reserved.
+*/
+
+// App
+"App.Quit" = "Fermer";
+"App.LaunchAtLogin" = "Lancer au login";
+
+// General
+"General.OK" = "OK";
+"General.Cancel" = "Annuler";
+
+// Clock
+"Clock.Alarm" = "Alarme";
+"Clock.Alarm.Set" = "Mettre";
+"Clock.Alarm.SetAlarm" = "Mettre alarme";
+"Clock.Timer" = "Minuteur";
+"Clock.Timer.Start" = "Démarrer";
+"Clock.Timer.SetTimer" = "Démarrer minuteur";
