@@ -7,7 +7,7 @@
 */
 
 // App
-"App.Quit" = "Quit";
+"App.Quit" = "Escire";
 "App.LaunchAtLogin" = "Avvio al login";
 
 // General
