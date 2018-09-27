@@ -19,10 +19,23 @@
 		29FA974320DFA9DA00ADDA07 /* Localizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 29FA974120DFA9D900ADDA07 /* Localizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3760D7AF20EE5FF1002F202B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3760D7B120EE5FF1002F202B /* Localizable.strings */; };
 		3760D7B920EE62A7002F202B /* Test.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3760D7BB20EE62A7002F202B /* Test.strings */; };
+		37CDBB3D213532CC0025D143 /* Localizer+SwitchLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDBB3C213532CC0025D143 /* Localizer+SwitchLanguage.swift */; };
+		37CDBB47213568950025D143 /* Localizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FA973E20DFA9D900ADDA07 /* Localizer.framework */; };
+		37CDBB4F213576F20025D143 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37CDBB51213576F20025D143 /* Localizable.strings */; };
+		37CDBB66213578130025D143 /* Additional.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37CDBB68213578130025D143 /* Additional.strings */; };
+		37CDBB6F2135796C0025D143 /* LanguageOverrideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDBB6E2135796C0025D143 /* LanguageOverrideTests.swift */; };
+		37CDBB71213579850025D143 /* BundleTableHierarchyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDBB70213579850025D143 /* BundleTableHierarchyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		29FA175620E6DD1300CAD321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29FA973520DFA9D900ADDA07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29FA973D20DFA9D900ADDA07;
+			remoteInfo = Localizer;
+		};
+		37CDBB48213568950025D143 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29FA973520DFA9D900ADDA07 /* Project object */;
 			proxyType = 1;
@@ -82,6 +95,23 @@
 		3760D7BE20EE62AA002F202B /* gsw */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gsw; path = gsw.lproj/Test.strings; sourceTree = "<group>"; };
 		3760D7BF20EE62AB002F202B /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Test.strings; sourceTree = "<group>"; };
 		3760D7C020EE62AD002F202B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Test.strings; sourceTree = "<group>"; };
+		37CDBB3C213532CC0025D143 /* Localizer+SwitchLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Localizer+SwitchLanguage.swift"; sourceTree = "<group>"; };
+		37CDBB42213568950025D143 /* LocalizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37CDBB46213568950025D143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37CDBB50213576F20025D143 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37CDBB52213576F90025D143 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37CDBB53213576F90025D143 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37CDBB54213576FA0025D143 /* gsw */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gsw; path = gsw.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37CDBB55213576FB0025D143 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37CDBB56213576FC0025D143 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		37CDBB67213578130025D143 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Additional.strings; sourceTree = "<group>"; };
+		37CDBB69213578140025D143 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Additional.strings; sourceTree = "<group>"; };
+		37CDBB6A213578150025D143 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Additional.strings; sourceTree = "<group>"; };
+		37CDBB6B213578150025D143 /* gsw */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gsw; path = gsw.lproj/Additional.strings; sourceTree = "<group>"; };
+		37CDBB6C213578160025D143 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Additional.strings; sourceTree = "<group>"; };
+		37CDBB6D213578160025D143 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Additional.strings; sourceTree = "<group>"; };
+		37CDBB6E2135796C0025D143 /* LanguageOverrideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageOverrideTests.swift; sourceTree = "<group>"; };
+		37CDBB70213579850025D143 /* BundleTableHierarchyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleTableHierarchyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +127,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CDBB3F213568950025D143 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CDBB47213568950025D143 /* Localizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +171,7 @@
 				29FA974920DFA9F600ADDA07 /* Source */,
 				29FA974020DFA9D900ADDA07 /* Resources */,
 				29FA173720E6DCA100CAD321 /* Example-macOS */,
+				37CDBB43213568950025D143 /* LocalizerTests */,
 				29FA973F20DFA9D900ADDA07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,6 +181,7 @@
 			children = (
 				29FA973E20DFA9D900ADDA07 /* Localizer.framework */,
 				29FA173620E6DCA100CAD321 /* Example-macOS.app */,
+				37CDBB42213568950025D143 /* LocalizerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				295652D420DFB403000051AA /* Localizer.swift */,
+				37CDBB3C213532CC0025D143 /* Localizer+SwitchLanguage.swift */,
 				295652D620DFB445000051AA /* String+Localize.swift */,
 			);
 			path = Source;
@@ -171,6 +212,18 @@
 				295652CE20DFB332000051AA /* Localizable.strings */,
 			);
 			path = Dictionaries;
+			sourceTree = "<group>";
+		};
+		37CDBB43213568950025D143 /* LocalizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				37CDBB70213579850025D143 /* BundleTableHierarchyTests.swift */,
+				37CDBB6E2135796C0025D143 /* LanguageOverrideTests.swift */,
+				37CDBB68213578130025D143 /* Additional.strings */,
+				37CDBB46213568950025D143 /* Info.plist */,
+				37CDBB51213576F20025D143 /* Localizable.strings */,
+			);
+			path = LocalizerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +277,24 @@
 			productReference = 29FA973E20DFA9D900ADDA07 /* Localizer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		37CDBB41213568950025D143 /* LocalizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37CDBB4A213568950025D143 /* Build configuration list for PBXNativeTarget "LocalizerTests" */;
+			buildPhases = (
+				37CDBB3E213568950025D143 /* Sources */,
+				37CDBB3F213568950025D143 /* Frameworks */,
+				37CDBB40213568950025D143 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37CDBB49213568950025D143 /* PBXTargetDependency */,
+			);
+			name = LocalizerTests;
+			productName = LocalizerTests;
+			productReference = 37CDBB42213568950025D143 /* LocalizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,6 +311,9 @@
 					29FA973D20DFA9D900ADDA07 = {
 						CreatedOnToolsVersion = 9.3.1;
 						LastSwiftMigration = 0930;
+					};
+					37CDBB41213568950025D143 = {
+						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
@@ -263,6 +337,7 @@
 			targets = (
 				29FA973D20DFA9D900ADDA07 /* Localizer */,
 				29FA173520E6DCA100CAD321 /* Example-macOS */,
+				37CDBB41213568950025D143 /* LocalizerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,6 +362,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37CDBB40213568950025D143 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CDBB4F213576F20025D143 /* Localizable.strings in Resources */,
+				37CDBB66213578130025D143 /* Additional.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -303,8 +387,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37CDBB3D213532CC0025D143 /* Localizer+SwitchLanguage.swift in Sources */,
 				295652D520DFB403000051AA /* Localizer.swift in Sources */,
 				295652D720DFB445000051AA /* String+Localize.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CDBB3E213568950025D143 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CDBB71213579850025D143 /* BundleTableHierarchyTests.swift in Sources */,
+				37CDBB6F2135796C0025D143 /* LanguageOverrideTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +409,11 @@
 			isa = PBXTargetDependency;
 			target = 29FA973D20DFA9D900ADDA07 /* Localizer */;
 			targetProxy = 29FA175620E6DD1300CAD321 /* PBXContainerItemProxy */;
+		};
+		37CDBB49213568950025D143 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29FA973D20DFA9D900ADDA07 /* Localizer */;
+			targetProxy = 37CDBB48213568950025D143 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -369,6 +468,32 @@
 				3760D7C020EE62AD002F202B /* es */,
 			);
 			name = Test.strings;
+			sourceTree = "<group>";
+		};
+		37CDBB51213576F20025D143 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37CDBB50213576F20025D143 /* en */,
+				37CDBB52213576F90025D143 /* fr */,
+				37CDBB53213576F90025D143 /* de */,
+				37CDBB54213576FA0025D143 /* gsw */,
+				37CDBB55213576FB0025D143 /* it */,
+				37CDBB56213576FC0025D143 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		37CDBB68213578130025D143 /* Additional.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37CDBB67213578130025D143 /* en */,
+				37CDBB69213578140025D143 /* fr */,
+				37CDBB6A213578150025D143 /* de */,
+				37CDBB6B213578150025D143 /* gsw */,
+				37CDBB6C213578160025D143 /* it */,
+				37CDBB6D213578160025D143 /* es */,
+			);
+			name = Additional.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -590,6 +715,42 @@
 			};
 			name = Release;
 		};
+		37CDBB4B213568950025D143 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C56P24GUF3;
+				INFOPLIST_FILE = LocalizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nide.LocalizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		37CDBB4C213568950025D143 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = C56P24GUF3;
+				INFOPLIST_FILE = LocalizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nide.LocalizerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -616,6 +777,15 @@
 			buildConfigurations = (
 				29FA974720DFA9DA00ADDA07 /* Debug */,
 				29FA974820DFA9DA00ADDA07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37CDBB4A213568950025D143 /* Build configuration list for PBXNativeTarget "LocalizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37CDBB4B213568950025D143 /* Debug */,
+				37CDBB4C213568950025D143 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

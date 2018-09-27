@@ -12,4 +12,8 @@ extension String {
   public func localize() -> String {
     return Localizer.localize(key: self)
   }
+  
+  public func localize(forBundle bundle: Bundle, table: String? = nil) -> String {
+    return Localizer.localize(key: self, bundle: bundle, table: table)
+  }
 }
