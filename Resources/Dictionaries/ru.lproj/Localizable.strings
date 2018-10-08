@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Localizer
+
+  Created by Danil Tkachenko on 08.10.18.
+  Copyright © 2018 Nicolas Degen. All rights reserved.
+*/
+
+// App
+"App.Quit" = "Выход";
+"App.LaunchAtLogin" = "Запускать при входе в систему";
+
+// General
+"General.OK" = "OK";
+"General.Cancel" = "Отмена";
+
+// Clock
+"Clock.Alarm" = "Будильник";
+"Clock.Alarm.Set" = "Установлен"; //Can be unubuiguis. Context required to translate properly
+"Clock.Alarm.SetAlarm" = "Установить будильник";
+"Clock.Timer" = "Таймер";
+"Clock.Timer.Start" = "Старт";
+"Clock.Timer.SetTimer" = "Установить таймер";
