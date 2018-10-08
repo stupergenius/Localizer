@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Localizer
+
+  Created by Ademílson F. Tonato on 08.10.18.
+  Copyright © 2018 Ademílson F. Tonato. All rights reserved.
+*/
+
+// App
+"App.Quit" = "Sair";
+"App.LaunchAtLogin" = "Iniciar ao Logar";
+
+// General
+"General.OK" = "OK";
+"General.Cancel" = "Cancelar";
+
+// Clock
+"Clock.Alarm" = "Alarme";
+"Clock.Alarm.Set" = "Set";
+"Clock.Alarm.SetAlarm" = "Definir Alarme";
+"Clock.Timer" = "Cronômetro";
+"Clock.Timer.Start" = "Iniciar";
+"Clock.Timer.SetTimer" = "Definir Cronômetro";
