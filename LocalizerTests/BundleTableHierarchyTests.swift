@@ -14,7 +14,7 @@ class BundleTableHierarchyTests: XCTestCase {
   
   override func setUp() {
     super.setUp()
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    Localizer.clearRegisteredBundles()
   }
   
   override func tearDown() {
@@ -23,13 +23,11 @@ class BundleTableHierarchyTests: XCTestCase {
   }
   
   func testBundleAddiditons() {
-    // This is an example of a functional test case.
     XCTAssert("Test.Language".localize() == "Test.Language", "Test.Language expected but got: " + "Test.Language".localize())
     Localizer.registerBundleTablePair(bundle: Bundle(for: type(of: self)), table: nil)
     XCTAssert("Test.Language".localize() == "English", "\"English\" expected but got: " + "Test.Language".localize())
     Localizer.registerBundleTablePair(bundle: Bundle(for: type(of: self)), table: "Additional")
     XCTAssert("Test.Language".localize() == "English 2", "\"English 2\" expected but got: " + "Test.Language".localize())
-    print(22)
   }
   
 //  func testPerformanceExample() {

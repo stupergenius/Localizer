@@ -21,9 +21,14 @@ extension Localizer {
     NotificationCenter.default.post(name: Notification.Name(rawValue: didSwitchLanguageNotificationKey), object: nil)
   }
   
-  open class func availableLanguages(_ excludeBase: Bool = false, forBundle bundle: Bundle = mainBundle) -> [String] {
-    // TODO: Iterate over bundle hierarchy
-    var availableLanguages = bundle.localizations
+  open class func availableLanguages(_ excludeBase: Bool = false, forBundle bundle: Bundle = mainBundle) -> Set<String> {
+    
+    var availableLanguages = Set<String>()
+    for (bundle, _) in bundleTableHierarchy {
+      bundle.localizations.forEach { localization in
+        availableLanguages.insert(localization)
+      }
+    }
     // If excludeBase = true, don't include "Base" in available languages
     if let indexOfBase = availableLanguages.index(of: "Base") , excludeBase == true {
       availableLanguages.remove(at: indexOfBase)

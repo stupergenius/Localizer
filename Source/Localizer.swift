@@ -11,7 +11,7 @@ import Foundation
 public class Localizer {
   
   // Localized Bundles
-  static let localizerBundle = Bundle(identifier: "com.nide.localizer")!
+  public static let localizerBundle = Bundle(identifier: "com.nide.localizer")!
   public static let mainBundle = Bundle.main
   static var bundleTableHierarchy: [(bundle: Bundle, table: String?)] = [(localizerBundle, nil)]
   
@@ -33,8 +33,22 @@ public class Localizer {
   public static let didSwitchLanguageNotificationKey = "LocalizerLanguageChange"
   public static var onLanguageDidChangeCallbackList = [()->()]()
   
-  public class func registerBundleTablePair(bundle: Bundle, table: String!) {
+  public class func registerBundleTablePair(bundle: Bundle, table: String! = nil) {
     bundleTableHierarchy.append((bundle: bundle, table: table))
+  }
+  
+  public class func clearRegisteredBundles() {
+    bundleTableHierarchy.removeAll()
+  }
+  
+  public class func getIdHierarchyOfBundles() -> [String] {
+    var bundleIds = [String]()
+    for (bundle, table) in bundleTableHierarchy {
+      if let bundleId = bundle.bundleIdentifier {
+        bundleIds.append(bundleId + ":" + (table ?? "Localizable"))
+      }
+    }
+    return bundleIds
   }
   
   class func localize(key: String) -> String {

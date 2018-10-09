@@ -14,6 +14,7 @@ class LanguageOverrideTests: XCTestCase {
   
   override func setUp() {
     super.setUp()
+    Localizer.registerBundleTablePair(bundle: Localizer.localizerBundle)
     Localizer.setLanguage(languageId: "fr")
   }
   
@@ -23,14 +24,8 @@ class LanguageOverrideTests: XCTestCase {
   }
   
   func testIsUsingFrenchForLocalizerStrings() {
+    print(Localizer.availableLanguages())
+    print(Localizer.getIdHierarchyOfBundles())
     XCTAssert("General.Cancel".localize() == "Annuler", "String was " + "General.Cancel".localize())
-    print(234)
   }
-  
-//  func testPerformanceExample() {
-//    // This is an example of a performance test case.
-//    self.measure {
-//      // Put the code you want to measure the time of here.
-//    }
-//  }
 }
